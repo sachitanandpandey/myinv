@@ -11,4 +11,3 @@ include
 lib
 pip-selfcheck.json
 setup.cfg
-setup.py
