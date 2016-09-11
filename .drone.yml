@@ -1,0 +1,16 @@
+build:
+  image: python:2.7
+  commands:
+    - pip install -U -r requirements/test.txt
+    - mkdir /var/log/silver && python manage.py test -v2
+
+compose:
+  mysql:
+    image: mysql:5.5
+    environment:
+      - MYSQL_DATABASE=test_db
+
+cache:
+  mount:
+    - /root/.cache/pip
+    - /usr/local/lib/python2.7/site-packages

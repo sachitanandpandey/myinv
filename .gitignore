@@ -1,0 +1,14 @@
+CHANGELOG.txt
+CONTRIBUTING.md
+DESCRIPTION
+LICENSE
+MANIFEST.in
+Makefile
+README.rst
+bin
+docs
+include
+lib
+pip-selfcheck.json
+setup.cfg
+setup.py
